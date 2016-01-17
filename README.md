@@ -1,5 +1,4 @@
 # Insightful
-WDI05 Project 3
 
 <img src="http://i.imgur.com/DrITw2i.png" alt="logo">  
 https://insightful-ideas.herokuapp.com
@@ -10,10 +9,10 @@ Insight aggregates text and pushes it into the Watson PI API, this allows us to 
 
 ###Team
 
-Jonathan: Project Manger, Watson api, Twitter api, documentation.  
-Erika: Git Master, Comments, Styling, Modals.  
-Rachel: Styling, Login, Sign up, User Profiles, Favorites.  
-Erin: Wireframes, D3, Home Page, Results Page, Styling, Logo Design.
+**Jonathan:** Project Manger, Watson api, Twitter api, documentation.  
+**Erika:** Git Master, Comments, Styling, Modals.  
+**Rachel:** Styling, Login, Sign up, User Profiles, Favorites.  
+**Erin:** Wireframes, D3, Home Page, Results Page, Styling, Logo Design.
 
 ###Installation
 
@@ -43,18 +42,18 @@ Now bundle install & rake db:migrate, and go!
 
 ###Tech
 
-Front end:
+**Front end:**
 SCSS, Bootstrap, Javascript, CSS, ajax, D3
 
-Back end:
+**Back end:**
 Ruby, Rails
 
-APIs:
+**APIs:**
 Watson Personality Insights, Twitter
 
-Gems:
+**Gems:**
 Devise, Watson-API-Client, Twitter, Bootstrap-Form, D3js, Skrollr, Puma
 
-User stories: https://trello.com/b/i26K2Y39/social-personality-app
-Repository: https://github.com/chibitofu/Insightful
-Wire frames: https://moqups.com/chibitofu/W8Ly9GVh
+**User stories:** https://trello.com/b/i26K2Y39/social-personality-app  
+**Repository:** https://github.com/chibitofu/Insightful  
+**Wire frames:** https://moqups.com/chibitofu/W8Ly9GVh
