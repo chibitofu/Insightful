@@ -12,7 +12,7 @@
 #watson_data {
 	display: inline-block;
 	justify-content: space-around;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .brand {
@@ -67,10 +67,15 @@
   left: 0;
 }
 
+.needsCont {
+	margin-bottom: 15px;
+}
+
 .showMore {
 	font-size: 12px;
-	margin-left: 280px;
+	margin-left: 260px;
 	position: absolute;
+	margin-top: 0;
 }
 
 .hideContent {
@@ -89,7 +94,8 @@ div .showContent {
 
 
 #offPill a {
-	color: #2B9D91
+	color: rgb(43, 86, 120);
+	background-color: rgb(236, 236, 236);
 }
 
 .personality-nav {
@@ -97,44 +103,35 @@ div .showContent {
 }
 
 .nav-pills {
-  margin: auto;
   min-width: 70px;
-  font-weight: bold;
-  font-size: 115%;
-
-}
-
-.nav-pills .toggle a {
-  color: #2B9D91 !important;
-  font-size: 115%;
+  font-size: 100%;
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .search_forms {
-  border-style: ridge;
-  border-color: #9D593A;
   height: 400px;
   width: 600px;
   margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .other a{
-  color: #2B9D91;
+  color: rgb(43, 86, 120);
   font-size: 100%;
+	background-color: rgb(236, 236, 236);
 }
 
 .nav-pills .active a {
-  background-color: #9D593A !important;
+  background-color: rgb(140, 39, 39) !important;
   color: rgb(255, 255, 255) !important;
-	text-shadow: 0px 0px 0.5px #000000;
+	text-shadow: 0px 0px 0.5px rgb(0, 0, 0);
+	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 #twitter{
-  margin-top: 16%
-}
-
-.clear {
-	font-weight: bold;
-  border-radius: 4px;
+  margin-top: 16%;
 }
 
 .favorited .favorite {
@@ -154,21 +151,36 @@ div .showContent {
 }
 
 .recentTitle {
-	background-color: #2B9D91;
+	background-color: rgb(140, 39, 39);
 }
 
 .recentTitle h1 {
 	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
+}
+
+#recentScroll {
+	height: 390px;
+	overflow: auto;
+}
+
+#recentScroll li {
+	list-style: none;
+}
+
+#recentScroll a {
+	color: rgb(43, 86, 120);
 }
 
 #homeTitle {
-	background-color: #2B9D91;
+	background-color: rgb(140, 39, 39);
 	width: 500px;
 	margin-bottom: 20px;
 }
 
 #homeTitle h1 {
 	color: rgb(255, 255, 255);
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Skrollr */
@@ -201,7 +213,6 @@ div .showContent {
 }
 
 /* Slide 1 */
-
 .homeSearch {
 	height: 575px;
 	padding-top: 10px;
@@ -211,12 +222,12 @@ div .showContent {
 #slide-2 .bcg {
     background: none;
     background-color: #010101;
-    height:100px;
+    height: 100px;
     text-align: center
 }
 
 /* CSS - Slide 3 */
-#slide-3 .bcg {background-image:url('../books_bg.jpg')}
+#slide-3 .bcg {background-image:url('../book_bg.jpg');}
 
 .homeRecent {
 	height: 600px;
@@ -226,6 +237,14 @@ div .showContent {
 .homeRecent div {
 	width: 600px;
 	margin: auto;
+}
+
+.homeRecent ul li {
+	list-style-type: none;
+}
+
+.homeRecent a {
+	color: rgb(65, 94, 107);
 }
 
 /* Slide 4 */
@@ -244,7 +263,8 @@ div .showContent {
     bottom: 30%; left: 0;
     width: 100%; text-align: center;
 }
-#slide-4 .bcg {background-image:url('../seattle_bg.jpg')}
+
+#slide-4 .bcg {background-image:url('../purple_bg.jpg');}
 
 .homeTeam {
 	height: 600px;
@@ -252,6 +272,16 @@ div .showContent {
 }
 
 .teamThumbs {
-	height: 520px;
-  overflow:auto;
+	font-size: 12px;
+	height: 475px;
+  overflow:hidden;
+}
+
+.teamThumbs h3 {
+	color: rgb(140, 39, 39);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.teamThumbs .btn {
+	font-size: 12px;
 }

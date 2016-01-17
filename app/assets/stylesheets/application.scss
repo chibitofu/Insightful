@@ -16,17 +16,35 @@
  */
 
 h1 {
-	color: #1C665F;
-	font-weight: bold;
+	color: rgb(140, 39, 39);
 }
 
-h2 {
-	font-weight: light;
-	font-size: 22px;
+.flash {
+	margin: auto;
+	color: rgb(140, 39, 39);
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(227, 227, 227);
+	height: 35px;
+	width: 00px;
+	border-radius: 5px;
+	padding: 8px;
 }
 
 #userName {
 	margin-left: 15px;
+}
+
+#userName a {
+	color: rgb(77, 182, 172);
+	font-size: 125%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn-default {
+	color: rgb(255, 255, 255);
+	background-color: rgb(65, 94, 107);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
 }
 
 .form {
@@ -34,9 +52,9 @@ h2 {
 }
 
 .nav .btn {
-  font-weight: bold;
   font-size: 80%;
 }
+
 .tab-pane {
   overflow:auto;
   height: 360px
@@ -44,40 +62,45 @@ h2 {
 
 footer {
   text-align: center;
-  font-size: 10px;
+  font-size: 8px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-top: 60px;
+	height: 25px;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	color: rgb(207, 207, 207);
+	background-color: rgb(43, 62, 71);
+	font-family: 'Montserrat', sans-serif;
 }
 
 body {
-	font-family: 'Josefin Slab', serif;
-	color: #2B9D91;
-	background: rgba(255, 180, 145, .5);
+	font-family: 'Noto Serif', serif;
+	color: rgb(65, 94, 107);
+	background: rgba(182, 182, 182, 0.5);
 	padding-top: 70px;
+	margin-bottom: 25px;
 
-$bgDefault      : #2B9D91;
-$bgHighlight    : #6EEADD;
-$colDefault     : #9D593A;
-$colHighlight   : #FFB491;
+$bgDefault      : rgb(43, 62, 71);
+$bgHighlight    : rgb(221, 221, 221);
+$colDefault     : rgb(140, 39, 39);
+$colHighlight   : rgb(108, 134, 145);
 $dropDown       : false;
 .navbar-default {
   background-color: $bgDefault;
   border-color: $colDefault;
-  font-size: 140%;
-  text-shadow: 0px 0px 1px #d2d2ec;
-  font-weight: bold;
+  font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
   .navbar-brand {
     color: $colDefault;
     &:hover, &:focus {
       color: $colHighlight; }}
   .navbar-text {
-    color: $colDefault; }
+    color: $bgHighlight; }
   .navbar-nav {
     > li {
       > a {
-        color: $colDefault;
+        color: $bgHighlight;
         margin-top: 5px;
         &:hover,  &:focus {
           color: $colHighlight; }}

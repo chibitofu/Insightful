@@ -3,8 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insightful</title>
-
-    <link href='//fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -24,19 +23,14 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-
             <img class="brand" alt="Brand" src="../insightful_logo.png">
-
             </a>
-           <!--  <ul class="nav navbar-nav app">
-
-            </ul> -->
           </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
+
           <div class="collapse navbar-collapse" id="insightful_nav">
             <ul class="nav navbar-nav">
-              <li><%= link_to "Search", "/" %></li>
-              <li><%= link_to "Portraits", "/portraits" %></li>
+              <li><%= link_to "Home", "/" %></li>
+              <li><%= link_to "Insights", "/portraits" %></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
              <li>
@@ -57,19 +51,19 @@
       </nav>
     </header>
     <div class="container-fluid">
-      <% flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, class: name %>
-      <% end -%>
+        <% flash.each do |name, msg| -%>
+          <div class="flash text-center">
+            <%= content_tag :div, msg, class: name %>
+          </div>
+        <% end -%>
 
       <%= yield %>
+
+      <%= render "devise/shared/login_modal" %>
+
+      <%= render "devise/shared/sign_up_modal" %>
+      <footer>Site powered by IBM Watson api and Twitter api &copy;2016</footer>
     </div>
-
-    <%= render "devise/shared/login_modal" %>
-
-    <%= render "devise/shared/sign_up_modal" %>
-
-      <footer>Site powered by IBM Watson API and Twitter API &copy;2016</footer>
-  
 
   <!-- Script for d3 tools -->
     <%= javascript_include_tag 'application' %>
@@ -77,7 +71,6 @@
   <!-- JQuery UI -->
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
 
   </body>
 

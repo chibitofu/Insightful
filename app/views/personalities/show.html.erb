@@ -19,7 +19,7 @@
       <div id="bigFive" class="dThree">
         <h4>Personality</h4>
       </div>
-      <div style="display: inline-block;">
+      <div class="needsCont" style="display: inline-block;">
         <div id="needs" class="dThree hideContent">
           <h4>Consumer Needs</h4>
         </div>
@@ -39,15 +39,15 @@
   <div class="col-md-6">
     <% if user_signed_in? %>
       <%= bootstrap_form_for [@personality, @comment] do |c| %>
-        <%= c.text_field(:body, :hide_label => true, :required => true, maxlength: 5000, minlength: 3, :placeholder => "Leave a comment here") %>
-        <%= c.primary(:class => "btn") %>
+        <%= c.text_field(:body, :hide_label => true, :required => true, maxlength: 5000, minlength: 3, :placeholder => "Leave a comment here", :class => "commentBox") %>
+        <%= c.primary(:class => "btn btn-default") %>
       <% end %>
     <% end %>
     <br/>
     <% @comments.each do |comment| %>
-    <div class="well">
-      <h1>&quot;<%= comment.body %>&quot;</h1>
-      <h1>-<%= link_to comment.user.username, user_path(comment.user) %></h1>
+    <div class="well showComment">
+      <p>&quot;<%= comment.body %>&quot;<p>
+      <h5>-<%= link_to comment.user.username, user_path(comment.user) %></h5>
     </div>
     <% end %>
   </div>

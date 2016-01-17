@@ -1,19 +1,28 @@
 .favorite_button a {
-  background-color: #2B9D91;
+  background-color: rgb(77, 182, 172);
   border: none;
-  color: #fff;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  font-family: 'Josefin Slab', serif;
-  font-size: 16px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 2px;
-  padding: 8px 12px;
+  padding: 6px 10px;
   text-transform: uppercase;
   width: auto;
+  border-radius: 5px;
 }
 
 .favorite_button a:hover {
   text-decoration: none;
-  color: #fff;
-  background: #6EEADD;
+  color: rgb(255, 255, 255);
+  background: rgb(41, 113, 107);
+}
+
+.new_comment .form-group {
+  margin-bottom: 5px;
+}
+
+.showComment h5 a {
+  color: rgb(140, 39, 39);
 }

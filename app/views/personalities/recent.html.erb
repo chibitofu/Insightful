@@ -1,17 +1,19 @@
 <div class="row">
   <div class="col-md-2">
   </div>
-  <div class="col-md-8 well">
+  <div class="col-md-8 well recentBody">
     <div class="recentTitle well">
-      <h1>All Portraits</h1>
+      <h1>Insights</h1>
     </div>
-    <ul>
-      <% @recent.each do |item| %>
-        <li>
-          <h3><%= link_to item.title, item %></h3>
-        </li>
-      <% end %>
-    </ul>
+    <div id="recentScroll">
+      <ul>
+        <% @recent.each do |item| %>
+          <li>
+            <h4><%= link_to item.title, item %></h4>
+          </li>
+        <% end %>
+      </ul>
+    </div>
   </div>
   <div class="col-md-2">
   </div>

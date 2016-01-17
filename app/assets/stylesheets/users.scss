@@ -1,9 +1,14 @@
 .user {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	width: 45%;
-    margin: 1em;
-    display: inline-block;
-    clear: right;
+  margin: 1em;
+  display: inline-block;
+  clear: right;
+}
+
+.userInfo {
+	color: rgb(55, 150, 141);
 }
 
 .container {
@@ -17,29 +22,42 @@
   margin: 1em;
   display: inline-block;
 }
+
+#offPillUser {
+	border-radius: 5px;
+}
+
+#offPillUser a {
+	color: rgb(43, 86, 120);
+	background-color: rgb(236, 236, 236);
+}
+
+#favorites h4 a {
+	color: rgb(65, 94, 107);
+}
+
+#favorites {
+	text-align: left;
+}
+
 .comments ul {
   padding: 0;
+}
+
+.comments h4 a {
+	color: rgb(65, 94, 107);
+}
+
+.comments li p {
+	font-family: 'Noto Serif', serif;
 }
 
 .pre {
 	font-weight: bold;
 }
 
-.nav-pills .active a {
-  background-color: #9D593A !important;
-}
-
-.nav-pills .toggle a {
-  color: #2B9D91 !important;
-  font-size: 115%;
-}
-
 .user-nav {
-  width: 197px;
-}
-
-.nav-pills {
-  margin: auto;
-  min-width: 70px;
-  font-weight: bold;
+  width: 150px;
+	margin-left: 25px;
+	margin: auto;
 }

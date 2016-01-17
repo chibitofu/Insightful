@@ -63,7 +63,7 @@ class PersonalitiesController < ApplicationController
      if personality.present?
       redirect_to personality
     else
-      redirect_to :back, alert: "There was a watson error: #{@error}"
+      redirect_to :back, alert: "There was an error creating an Insight: #{@error}"
     end
   end
 
@@ -81,8 +81,8 @@ class PersonalitiesController < ApplicationController
 
   def create_personality(text, title)
     service = WatsonAPIClient::PersonalityInsights.new(:user=>ENV["WATSON_USERNAME"],
-                                                         :password=>ENV["WATSON_PASSWORD"],
-                                                         :verify_ssl=>OpenSSL::SSL::VERIFY_NONE)
+                                                       :password=>ENV["WATSON_PASSWORD"],
+                                                       :verify_ssl=>OpenSSL::SSL::VERIFY_NONE)
 
     begin
       data = service.profile(
