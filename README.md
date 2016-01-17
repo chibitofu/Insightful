@@ -5,12 +5,18 @@ WDI05 Project 3
 
 ###About
 
-Insight aggregates text and pushes it into the Watson PI API, this allows us to describe the personality of a group of people to describe the personality of groups talking about a trending twitter topic, user or string, or generally any text (1000 character - 25000 character) entered by the user. A switch at the bottom will allow you to select Twitter or other. The produced personalities are transformed into Myers Briggs types, and visualized via D3 tools. If a user logs in to our validated login we’ll give the option of saving previous personality profiles, showing recent profiles and commenting on them.
+Insight aggregates text and pushes it into the Watson PI API, this allows us to describe the personality of a group of people to describe the personality of groups talking about a trending twitter topic, user or string, or generally any text (200 character - 25000 character) entered by the user. A switch at the bottom will allow you to select Twitter or other. The produced personalities are transformed into Myers Briggs types, and visualized via D3 tools. If a user logs in to our validated login we’ll give the option of saving previous personality profiles, showing recent profiles and commenting on them.
 
+###Team
+
+Jonathan: Project Manger, Watson api, Twitter api, documentation.  
+Erika: Git Master, Comments, Styling, Modals.  
+Rachel: Styling, Login, Sign up, User Profiles, Favorites.  
+Erin: Wireframes, D3, Home Page, Results Page, Styling, Logo Design.
 
 ###Installation
 
-The Social Personality App inputs text into the REST API on the IBM Watson™ Developer Cloud, and allow you to view and favorite these results. To enable the API, you have to register for the IBM Bluemix™ beforehand, make the services effective, and relate them to your ENV file. 
+The Social Personality App inputs text into the REST API on the IBM Watson™ Developer Cloud, and allow you to view and favorite these results. To enable the API, you have to register for the IBM Bluemix™ beforehand, make the services effective, and relate them to your ENV file.
 <ol>
 	<li> Register with Bluemix at: http://www.ibm.com/cloud-computing/bluemix/
 *Be sure to complete registration all the way through to account validation for email address.* </li>
@@ -40,15 +46,15 @@ Front end:
 SCSS, Bootstrap, Javascript, CSS, ajax, D3
 
 Back end:
-Ruby, Rails 
+Ruby, Rails
 
 APIs:
-Watson PI, Twitter
+Watson Personality Insights, Twitter
 
 Gems:
 Devise, Watson-API-Client, Twitter, Bootstrap-Form, D3js, Skrollr, Puma
 
 URL: insightful-app.herokuapp.com
 User stories: https://trello.com/b/i26K2Y39/social-personality-app
-Repository: https://github.com/erikapallasmoore/Social_Personality_App
+Repository: https://github.com/chibitofu/Insightful
 Wire frames: https://moqups.com/chibitofu/W8Ly9GVh
