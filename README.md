@@ -1,7 +1,8 @@
-# Insightful App
+# Insightful
 WDI05 Project 3
 
 <img src="http://i.imgur.com/DrITw2i.png" alt="logo">  
+https://insightful-ideas.herokuapp.com
 
 ###About
 
@@ -54,7 +55,6 @@ Watson Personality Insights, Twitter
 Gems:
 Devise, Watson-API-Client, Twitter, Bootstrap-Form, D3js, Skrollr, Puma
 
-URL: insightful-app.herokuapp.com
 User stories: https://trello.com/b/i26K2Y39/social-personality-app
 Repository: https://github.com/chibitofu/Insightful
 Wire frames: https://moqups.com/chibitofu/W8Ly9GVh
