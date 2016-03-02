@@ -1,3 +1,5 @@
+require 'watson-api-client'
+
 class PersonalitiesController < ApplicationController
   attr_reader :error
 
